@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little World For You 🌷</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<audio id="music" loop>
+    <source src="{{ url_for('static', filename='music/favourite.mp3') }}" type="audio/mpeg">
+</audio>
+
+<div class="sky"></div>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="stars"></div>
+<div id="particles"></div>
+
+<header class="hud">
+    <div class="pixel-logo">♡ YOUR LITTLE WORLD</div>
+    <div class="hearts-bar">♥ ♥ ♥ ♥ ♥</div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="sun"></div>
+
+        <div class="floating-block block1"></div>
+        <div class="floating-block block2"></div>
+
+        <div class="pixel-flower flower-main">
+            <div class="flower-petals">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="flower-center"></div>
+            <div class="flower-stem"></div>
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+        </div>
+
+        <div class="grass-ground"></div>
+
+        <p class="pixel-small">A SPECIAL PLACE MADE JUST FOR YOU</p>
+        <h1>Hey, you. 🌷</h1>
+
+        <div class="sign">
+            <span>I know things have been a little heavy.</span>
+        </div>
+
+        <p class="intro">
+            So I made you a tiny little world where you don't have to
+            explain anything, fix anything, or pretend anything.
+        </p>
+
+        <button id="startBtn" class="pixel-btn">ENTER YOUR LITTLE WORLD ▶</button>
+        <p class="hint">♪ Your favourite music starts here</p>
+    </section>
+
+    <section id="message" class="world-section">
+        <div class="path"></div>
+
+        <div class="pixel-house">
+            <div class="roof"></div>
+            <div class="house-body">
+                <div class="window"></div>
+                <div class="door"></div>
+            </div>
+        </div>
+
+        <div class="message-card">
+            <div class="card-title">✦ A MESSAGE FOR YOU ✦</div>
+
+            <div class="pixel-divider"></div>
+
+            <p class="script">Hey...</p>
+
+            <p>
+                I don't know everything you're dealing with right now,
+                and I don't want you to feel like you have to tell me
+                before you're ready.
+            </p>
+
+            <p>
+                I can just see that something has been weighing on you.
+                Sometimes you don't even need to say anything for someone
+                who cares about you to notice.
+            </p>
+
+            <div class="game-tip">
+                <span class="tip-icon">!</span>
+                <div>
+                    <strong>REMINDER</strong>
+                    <br>
+                    You don't have to carry everything at once.
+                </div>
+            </div>
+
+            <p>
+                Whatever is happening in your life right now,
+                please take it one day at a time.
+                You are allowed to be tired.
+                You are allowed to need space.
+                You are allowed to have a bad day.
+            </p>
+
+            <p>
+                And you don't have to pretend you're okay around me.
+                If you want to talk, I'll listen.
+                If you don't want to talk, that's okay too.
+                If you just need some quiet, I'll respect that.
+            </p>
+
+            <p class="important">
+                I just want you to know that you matter.
+                More than you probably realize.
+            </p>
+
+            <p>
+                So here's a little flower, a little peaceful place,
+                and a reminder that you don't have to figure everything
+                out today.
+            </p>
+
+            <p>
+                Take a breath. Drink some water. Rest when you can.
+                Be patient with yourself.
+            </p>
+
+            <div class="quote-box">
+                <span>🌷</span>
+                <strong>One block at a time.</strong>
+                <span>🌷</span>
+            </div>
+
+            <p class="closing">
+                Whenever you need someone, I'm here.
+                No pressure. No questions.
+                Just here. 🤍
+            </p>
+
+            <button id="flowerBtn" class="pixel-btn small">PLANT SOME FLOWERS 🌸</button>
+            <div id="garden"></div>
+
+            <p class="final">I hope tomorrow feels a little lighter than today.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <span>☀</span> A tiny peaceful world made with care <span>☀</span>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
